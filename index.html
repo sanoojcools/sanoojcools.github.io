@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanuj Krishnan - Co-Founder Stealth | Designing Human-AI Organizations That Get Stronger</title>
+  <meta name="description" content="Builder + CHRO. I design orgs that get stronger as AI joins. Ex-Amazon 8+ yrs, Trianz, Co-Founder Agentic Workforce Intelligence. I ship in code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      background: #FCFCF9;
+      color: #18181b;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    ::selection { background: #18181b; color: white; }
+    .top-bar {
+      width: 100%; background: #18181b; color: #f4f4f5;
+      font-size: 11px; letter-spacing: 0.05em;
+    }
+    .top-bar-inner {
+      max-width: 880px; margin: 0 auto; padding: 8px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .top-bar span { opacity: 0.7; }
+    .top-bar .version { opacity: 0.5; display: none; }
+    @media(min-width:768px){ .top-bar .version { display: inline; } }
+
+    .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      display: flex; align-items: baseline; justify-content: space-between;
+      padding: 32px 0; border-bottom: 1px solid rgba(228,228,231,0.7);
+      flex-wrap: wrap; gap: 16px;
+    }
+    .brand { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+    .brand-name { font-weight: 600; font-size: 15px; letter-spacing: -0.025em; }
+    .brand-tag { font-size: 12px; color: #71717a; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; display: none; }
+    @media(min-width:768px){ .brand-tag { display: inline; } }
+
+    .header-links { display: flex; gap: 10px; }
+    .header-links a {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 13px; font-weight: 500; color: #18181b;
+      text-decoration: none; border: 1px solid #e4e4e7;
+      border-radius: 9999px; padding: 6px 14px;
+      transition: all 0.15s;
+    }
+    .header-links a:hover { background: #18181b; color: white; }
+    .header-links svg { width: 14px; height: 14px; }
+
+    .hero { padding: 64px 0 48px; }
+    @media(min-width:768px){ .hero { padding-top: 96px; } }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #71717a; margin-bottom: 24px;
+    }
+    .eyebrow-line { width: 32px; height: 1px; background: #d4d4d8; }
+
+    h1 {
+      font-size: 32px; line-height: 0.95; letter-spacing: -0.03em;
+      font-weight: 700; max-width: 640px;
+    }
+    @media(min-width:768px){ h1 { font-size: 48px; } }
+    h1 .accent { color: #2563eb; }
+
+    .hero-desc {
+      margin-top: 24px; font-size: 18px; line-height: 1.4;
+      color: #52525b; max-width: 560px; letter-spacing: -0.025em;
+    }
+    @media(min-width:768px){ .hero-desc { font-size: 20px; } }
+    .hero-desc strong { color: #18181b; font-weight: 500; }
+
+    .hero-ctas { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #18181b; color: white; font-size: 14px; font-weight: 500;
+      padding: 12px 20px; border-radius: 9999px; text-decoration: none;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #000; }
+    .btn-primary svg { width: 16px; height: 16px; opacity: 0.8; }
+    .btn-arrow { transition: transform 0.15s; }
+    .btn-primary:hover .btn-arrow { transform: translate(2px, -2px); }
+
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: white; color: #18181b; font-size: 14px; font-weight: 500;
+      padding: 12px 20px; border-radius: 9999px; text-decoration: none;
+      border: 1px solid #e4e4e7; transition: border-color 0.15s;
+    }
+    .btn-secondary:hover { border-color: #18181b; }
+    .btn-secondary svg { width: 16px; height: 16px; }
+
+    .tags { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      font-size: 11px; font-weight: 500; letter-spacing: 0.05em;
+      padding: 4px 10px; border-radius: 9999px;
+      background: #f4f4f5; border: 1px solid #e4e4e7; color: #71717a;
+    }
+
+    section { padding: 48px 0; border-top: 1px solid rgba(228,228,231,0.7); }
+    .section-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 24px; flex-wrap: wrap; gap: 12px;
+    }
+    .section-title {
+      font-size: 13px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #71717a;
+    }
+    .section-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 500; padding: 4px 10px;
+      border-radius: 9999px; background: #18181b; color: white;
+    }
+    .section-badge svg { width: 12px; height: 12px; }
+
+    /* Now section */
+    .now-grid {
+      display: grid; grid-template-columns: 1fr; gap: 16px;
+    }
+    @media(min-width:768px){ .now-grid { grid-template-columns: 1.1fr 0.9fr; } }
+
+    .card {
+      border-radius: 20px; padding: 24px;
+      position: relative; overflow: hidden;
+    }
+    @media(min-width:768px){ .card { padding: 28px; } }
+
+    .card-primary {
+      border: 1px solid #18181b; background: white;
+    }
+    .card-glow {
+      position: absolute; top: 0; right: 0;
+      width: 128px; height: 128px;
+      background: rgba(37,99,235,0.1); filter: blur(24px);
+      border-radius: 9999px; pointer-events: none;
+    }
+    .card-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .pulse-dot {
+      width: 8px; height: 8px; border-radius: 50%; background: #10b981;
+      animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite;
+    }
+    @keyframes pulse { 50% { opacity: 0.5; } }
+    .hiring-badge {
+      font-size: 10px; font-family: ui-monospace, monospace;
+      background: #18181b; color: white; padding: 2px 8px;
+      border-radius: 9999px;
+    }
+    .card h3 {
+      margin-top: 16px; font-size: 20px; font-weight: 600;
+      letter-spacing: -0.025em; line-height: 1.25;
+    }
+    .card p {
+      margin-top: 8px; font-size: 14px; line-height: 1.5; color: #52525b;
+    }
+    .card-box {
+      margin-top: 20px; padding: 12px; border-radius: 12px;
+      background: #fafafa; border: 1px solid #e4e4e7;
+    }
+    .card-box-label {
+      font-size: 11px; font-weight: 600; letter-spacing: 0.05em;
+      text-transform: uppercase; color: #71717a; margin-bottom: 4px;
+    }
+    .card-box-text { font-size: 13px; line-height: 1.5; color: #3f3f46; }
+    .card-link {
+      margin-top: 16px; display: inline-flex; align-items: center; gap: 4px;
+      font-size: 13px; font-weight: 500; color: #18181b; text-decoration: none;
+      transition: gap 0.15s;
+    }
+    .card-link:hover { gap: 8px; }
+    .card-link svg { width: 14px; height: 14px; }
+
+    .card-secondary {
+      border: 1px solid #e4e4e7; background: #FCFCF9;
+    }
+    .card-secondary h3 { font-size: 18px; }
+    .card-list { margin-top: 16px; list-style: none; }
+    .card-list li {
+      display: flex; gap: 8px; font-size: 13px; color: #3f3f46;
+      line-height: 1.5;
+    }
+    .card-list li + li { margin-top: 8px; }
+    .card-list .dash { color: #d4d4d8; flex-shrink: 0; }
+
+    /* Builder Proof */
+    .project-card {
+      border-radius: 24px; border: 1px solid #e4e4e7;
+      background: white; overflow: hidden;
+    }
+    .project-card-inner {
+      display: grid; grid-template-columns: 1fr;
+    }
+    @media(min-width:768px){ .project-card-inner { grid-template-columns: 1.1fr 0.9fr; } }
+
+    .project-info { padding: 28px; }
+    @media(min-width:768px){ .project-info { padding: 32px; } }
+
+    .project-header { display: flex; align-items: center; gap: 12px; }
+    .project-icon {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: #18181b; color: white;
+      display: grid; place-items: center;
+    }
+    .project-icon svg { width: 16px; height: 16px; }
+    .project-icon.pl {
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      font-size: 12px; font-weight: 800;
+    }
+    .project-meta h4 { font-size: 16px; font-weight: 600; letter-spacing: -0.025em; }
+    .project-meta span {
+      font-size: 12px; color: #71717a; font-family: ui-monospace, monospace;
+    }
+    .project-desc {
+      margin-top: 16px; font-size: 14px; line-height: 1.6; color: #3f3f46;
+    }
+    .project-stats {
+      margin-top: 24px; display: grid; grid-template-columns: repeat(3,1fr); gap: 12px;
+    }
+    .stat-box {
+      border-radius: 12px; background: #fafafa; border: 1px solid #f4f4f5;
+      padding: 12px;
+    }
+    .stat-label {
+      font-size: 11px; font-weight: 500; letter-spacing: 0.05em;
+      text-transform: uppercase; color: #71717a;
+    }
+    .stat-value { font-size: 14px; font-weight: 600; margin-top: 4px; }
+    .project-actions {
+      margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px;
+    }
+    .btn-blue {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #2563eb; color: white; font-size: 13px; font-weight: 500;
+      padding: 8px 16px; border-radius: 9999px; text-decoration: none;
+      transition: background 0.15s;
+    }
+    .btn-blue:hover { background: #1d4ed8; }
+    .btn-blue svg { width: 14px; height: 14px; }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: white; color: #18181b; font-size: 13px; font-weight: 500;
+      padding: 8px 16px; border-radius: 9999px; text-decoration: none;
+      border: 1px solid #e4e4e7; transition: border-color 0.15s;
+    }
+    .btn-ghost:hover { border-color: #18181b; }
+    .btn-ghost svg { width: 14px; height: 14px; }
+
+    .project-code {
+      background: #09090b; color: #f4f4f5;
+      padding: 28px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px; line-height: 1.6;
+    }
+    @media(min-width:768px){ .project-code { padding: 32px; } }
+    .code-comment { color: #71717a; }
+    .code-keyword { color: #a5a5c0; }
+    .code-func { color: #93c5fd; }
+    .code-string { color: #6ee7b7; }
+    .code-plain { color: #f4f4f5; }
+    .code-output {
+      margin-top: 24px; padding-top: 24px; border-top: 1px solid #27272a;
+      font-size: 11px; color: #a1a1aa;
+    }
+    .code-output span { color: #6ee7b7; }
+    .code-output .white { color: #f4f4f5; }
+
+    /* Operator Proof */
+    .metrics-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+    }
+    @media(min-width:768px){ .metrics-grid { grid-template-columns: repeat(5, 1fr); } }
+    .metric-card {
+      border-radius: 16px; border: 1px solid #e4e4e7; background: white;
+      padding: 16px;
+    }
+    .metric-label {
+      font-size: 11px; font-weight: 500; letter-spacing: 0.05em;
+      text-transform: uppercase; color: #71717a; line-height: 1.25;
+    }
+    .metric-value {
+      font-size: 22px; font-weight: 700; letter-spacing: -0.025em; margin-top: 8px;
+    }
+    .metric-sub {
+      font-size: 11px; color: #71717a; margin-top: 4px; line-height: 1.25;
+    }
+
+    /* Timeline */
+    .timeline { position: relative; padding-left: 32px; }
+    .timeline-line {
+      position: absolute; left: 3px; top: 4px; bottom: 4px;
+      width: 1px; background: #e4e4e7;
+    }
+    .timeline-item { position: relative; margin-bottom: 32px; }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-dot {
+      position: absolute; left: -32px; top: 6px;
+      width: 7px; height: 7px; border-radius: 50%; background: #18181b;
+    }
+    .timeline-dot.highlight {
+      background: #2563eb;
+      box-shadow: 0 0 0 4px #dbeafe;
+    }
+    .timeline-header {
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline;
+    }
+    .timeline-year {
+      font-size: 11px; font-family: ui-monospace, monospace;
+      padding: 2px 8px; border-radius: 9999px; border: 1px solid #e4e4e7;
+      background: #fafafa; color: #71717a;
+    }
+    .timeline-year.highlight {
+      background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8;
+    }
+    .timeline-title { font-size: 14px; font-weight: 600; letter-spacing: -0.025em; }
+    .timeline-desc {
+      margin-top: 8px; font-size: 13px; color: #52525b; line-height: 1.5;
+      max-width: 600px;
+    }
+
+    /* What I Do */
+    .services-grid {
+      display: grid; grid-template-columns: 1fr; gap: 16px;
+    }
+    @media(min-width:768px){ .services-grid { grid-template-columns: repeat(3, 1fr); } }
+    .service-card {
+      border-radius: 16px; border: 1px solid #e4e4e7; background: white;
+      padding: 24px;
+    }
+    .service-icon {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: #18181b; color: white;
+      display: grid; place-items: center;
+      font-size: 12px; font-weight: 700;
+    }
+    .service-card h3 {
+      margin-top: 16px; font-size: 15px; font-weight: 600;
+      letter-spacing: -0.025em; line-height: 1.25;
+    }
+    .service-card p {
+      margin-top: 8px; font-size: 13px; line-height: 1.5; color: #52525b;
+    }
+
+    /* Footer / Connect */
+    .connect-card {
+      border-radius: 24px; background: #18181b; color: white;
+      padding: 28px;
+    }
+    @media(min-width:768px){ .connect-card { padding: 32px; } }
+    .connect-grid {
+      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px;
+    }
+    .connect-left h2 {
+      font-size: 18px; font-weight: 600; letter-spacing: -0.025em;
+    }
+    .connect-left p {
+      margin-top: 8px; font-size: 13px; color: #a1a1aa; line-height: 1.5;
+      max-width: 420px;
+    }
+    .connect-links {
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .connect-links a, .connect-links button {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; color: white; text-decoration: none;
+      background: none; border: none; cursor: pointer; padding: 0;
+      transition: color 0.15s; font-family: inherit;
+    }
+    .connect-links a:hover { color: #93c5fd; }
+    .connect-links button:hover { color: #e4e4e7; }
+    .connect-links svg { width: 14px; height: 14px; }
+    .copied { color: #34d399 !important; }
+
+    .connect-footer {
+      margin-top: 32px; padding-top: 24px; border-top: 1px solid #27272a;
+      display: flex; flex-wrap: wrap; gap: 12px;
+      font-size: 11px; color: #71717a;
+    }
+
+    .pb-16 { padding-bottom: 64px; }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <span>Privacy-first • No trackers • No cookies • No phone number</span>
+      <span class="version">sanoojcools.github.io • v3 builder</span>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <header>
+      <div class="brand">
+        <span class="brand-name">Sanuj Krishnan</span>
+        <span class="brand-tag">Bengaluru • Builder + CHRO</span>
+      </div>
+      <div class="header-links">
+        <a href="https://www.linkedin.com/in/sanuj-krishnan/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/sanoojcools" target="_blank" rel="noopener" style="display:none;" class="gh-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          GitHub
+        </a>
+      </div>
+      <style>@media(min-width:768px){ .gh-link { display:inline-flex !important; } }</style>
+    </header>
+
+    <section class="hero" style="border:none; padding-bottom:0;">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        Portfolio v3 • Builder Manifesto
+      </div>
+      <h1>I design organizations that get stronger <span class="accent">as AI joins.</span></h1>
+      <p class="hero-desc">
+        Most companies hire AI talent. Few redesign the organization to absorb it.
+        <strong>I do the second</strong> — across world-class orgs and high-growth startups for 14+ years, spanning India, US, MENA, ASEAN.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://sanoojcools-workforce-scenario-engine-app-2lrssf.streamlit.app" target="_blank" rel="noopener" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3h15"/><path d="M6 3v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3"/><path d="M6 14h12"/></svg>
+          Live Demo: Workforce Engine
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+        <a href="https://github.com/sanoojcools/workforce-scenario-engine" target="_blank" rel="noopener" class="btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          I ship in code
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.6; width:14px; height:14px;"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+        </a>
+      </div>
+      <div class="tags">
+        <span class="tag">Agentic Workforce Intelligence</span>
+        <span class="tag">Human-AI Org Design</span>
+        <span class="tag">Product Strategy</span>
+        <span class="tag">AI Organization</span>
+        <span class="tag">Career Path Planning</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <span class="section-title">Now</span>
+        <span style="font-size:11px; color:#a1a1aa; font-family:ui-monospace,monospace;">2024 →</span>
+      </div>
+      <div class="now-grid">
+        <div class="card card-primary">
+          <div class="card-glow"></div>
+          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+            <div class="card-label">
+              <span class="pulse-dot"></span>
+              Co-Founder • Stealth
+            </div>
+            <span class="hiring-badge">HIRING</span>
+          </div>
+          <h3>Agentic Workforce Intelligence</h3>
+          <p>Zero-to-one, high-velocity. Building org design primitives for human-AI teams. Bengaluru.</p>
+          <div class="card-box">
+            <div class="card-box-label">Founding AI Engineer — Our #1 hire</div>
+            <div class="card-box-text">2-4 years in startups, LLMs shipped to production. You ship in code, not just slides. DM me on LinkedIn.</div>
+          </div>
+          <a href="https://www.linkedin.com/in/sanuj-krishnan/" target="_blank" rel="noopener" class="card-link">
+            Apply via DM
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+        </div>
+        <div class="card card-secondary">
+          <div class="card-label" style="color:#71717a;">Current Operator Role</div>
+          <h3>Head HRBP @ Trianz</h3>
+          <p>Services-as-Software transformation. Delayed management, redeployed talent into AI platform roles (Concierto, Avrio, Agentic AI).</p>
+          <ul class="card-list">
+            <li><span class="dash">—</span> Role Maturity Framework: 16 families, 80+ jobs, benchmarked vs Amazon/Microsoft</li>
+            <li><span class="dash">—</span> Co-drove AI-Native SDLC with CTO: 8 parallel PODs, Cursor + Claude Code + Codex</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <span class="section-title">Builder Proof</span>
+        <span class="section-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+          I ship in code, not just slides
+        </span>
+      </div>
+
+      <!-- Workforce Scenario Engine -->
+      <div class="project-card">
+        <div class="project-card-inner">
+          <div class="project-info">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg>
+              </div>
+              <div class="project-meta">
+                <h4>workforce-scenario-engine</h4>
+                <span>Python • Monte Carlo • Streamlit</span>
+              </div>
+            </div>
+            <p class="project-desc">Monte Carlo simulation for workforce planning. Model hiring, attrition, AI absorption, role maturity, and revenue-per-employee impact. Built for CHROs who think in product.</p>
+            <div class="project-stats">
+              <div class="stat-box">
+                <div class="stat-label">Sims</div>
+                <div class="stat-value">10k+</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-label">Scenarios</div>
+                <div class="stat-value">Parallel</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-label">Output</div>
+                <div class="stat-value">$/FTE</div>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://sanoojcools-workforce-scenario-engine-app-2lrssf.streamlit.app" target="_blank" rel="noopener" class="btn-blue">
+                Open Live App
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a href="https://github.com/sanoojcools/workforce-scenario-engine" target="_blank" rel="noopener" class="btn-ghost">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                View Source
+              </a>
+            </div>
+          </div>
+          <div class="project-code">
+            <div class="code-comment"># monte_carlo.py</div>
+            <div style="margin-top:12px;">
+              <span class="code-keyword">def</span> <span class="code-func">simulate_workforce</span><span class="code-plain">(</span><span class="code-comment">n=10000</span><span class="code-plain">):</span>
+            </div>
+            <div style="padding-left:16px;">
+              attrition = <span class="code-func">np.random.normal</span><span class="code-plain">(μ, σ, n)</span>
+            </div>
+            <div style="padding-left:16px;">
+              ai_absorption = <span class="code-func">beta</span><span class="code-plain">(α, β, n)</span> <span class="code-comment"># 0→1</span>
+            </div>
+            <div style="padding-left:16px;">
+              role_maturity = <span class="code-func">map_framework</span><span class="code-plain">(16, 80+)</span>
+            </div>
+            <div style="padding-left:16px; margin-top:8px;">
+              rev_per_fte = f(hiring, attrition, ai_absorption)
+            </div>
+            <div style="padding-left:16px;">
+              <span class="code-keyword">return</span> rev_per_fte.<span class="code-func">percentile</span><span class="code-plain">([10,50,90])</span>
+            </div>
+            <div class="code-output">
+              <div>▶ 90th percentile: <span>$90K / employee</span></div>
+              <div>▶ Baseline: $70K → <span class="white">+30% in 18mo</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- People Ledger -->
+      <div class="project-card" style="margin-top:24px;">
+        <div class="project-card-inner">
+          <div class="project-info">
+            <div class="project-header">
+              <div class="project-icon pl">PL</div>
+              <div class="project-meta">
+                <h4>People Ledger</h4>
+                <span>Solidity • ZK Proofs • AI Agents</span>
+              </div>
+            </div>
+            <p class="project-desc">Decentralized professional identity protocol. Employers cryptographically sign credentials. Employees own them. AI agents match encrypted data to jobs without revealing private ratings.</p>
+            <div class="project-stats">
+              <div class="stat-box">
+                <div class="stat-label">Tabs</div>
+                <div class="stat-value">6 Live</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-label">Layers</div>
+                <div class="stat-value">Trust+ZK+AI</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-label">Stack</div>
+                <div class="stat-value">Solidity</div>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://sanoojcools.github.io/people-ledger" target="_blank" rel="noopener" class="btn-blue">
+                Open Live App
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a href="https://github.com/sanoojcools/people-ledger" target="_blank" rel="noopener" class="btn-ghost">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                View Source
+              </a>
+            </div>
+          </div>
+          <div class="project-code">
+            <div class="code-comment"># people_ledger.sol</div>
+            <div style="margin-top:12px;">
+              <span class="code-keyword">contract</span> <span class="code-plain">PeopleLedger {</span>
+            </div>
+            <div style="padding-left:16px;">
+              <span class="code-keyword">function</span> <span class="code-func">issueCredential</span><span class="code-plain">(bytes32 hash)</span>
+            </div>
+            <div style="padding-left:32px;">
+              <span class="code-comment">// Employer signs, employee owns</span>
+            </div>
+            <div style="padding-left:16px;">
+              <span class="code-keyword">function</span> <span class="code-func">verifyZKProof</span><span class="code-plain">(Proof calldata p)</span>
+            </div>
+            <div style="padding-left:32px;">
+              <span class="code-comment">// Prove threshold without revealing</span>
+            </div>
+            <div><span class="code-plain">}</span></div>
+            <div class="code-output">
+              <div>▶ AI Match: <span>6/6 requirements verified</span></div>
+              <div>▶ ZK Proof: <span class="white">Rating hidden ✓</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <span class="section-title">Operator Proof</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-label">Revenue / Employee</div>
+          <div class="metric-value">+30%</div>
+          <div class="metric-sub">$70K → $90K • 18 mo</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Attrition</div>
+          <div class="metric-value">56%→26%</div>
+          <div class="metric-sub">Amazon • systemic fix</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Hires Scaled</div>
+          <div class="metric-value">4000+</div>
+          <div class="metric-sub">People programs architected</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Sr Leaders Assimilated</div>
+          <div class="metric-value">200+ L6+</div>
+          <div class="metric-sub">Bar Raiser program</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">E-comm Org Designed</div>
+          <div class="metric-value">$1.5B</div>
+          <div class="metric-sub">Carrefour MENA • 0→1</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header" style="margin-bottom:32px;">
+        <span class="section-title">Timeline</span>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot highlight"></div>
+          <div class="timeline-header">
+            <span class="timeline-year highlight">2024 — Now</span>
+            <span class="timeline-title">Co-Founder, Stealth • Agentic Workforce Intelligence</span>
+          </div>
+          <p class="timeline-desc">Designing org primitives for human-AI teams. Head HRBP @ Trianz parallel.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="timeline-year">2023 — 2024</span>
+            <span class="timeline-title">Head HRBP @ Trianz</span>
+          </div>
+          <p class="timeline-desc">Services-as-Software, Concierto/Avrio/Agentic AI roles, Role Maturity Framework (16 families, 80+ jobs), AI-Native SDLC with 8 PODs.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="timeline-year">2021 — 2022</span>
+            <span class="timeline-title">Carrefour MENA, Majid Al Futtaim</span>
+          </div>
+          <p class="timeline-desc">Designed org for $1.5B e-commerce business. Built D&I Council from zero.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="timeline-year">2020 — 2021</span>
+            <span class="timeline-title">Swvl • Built People from scratch across 6 countries</span>
+          </div>
+          <p class="timeline-desc">Restructured geography → customer-segment, accelerating 3 country launches by 6 months.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="timeline-year">2012 — 2020 • 8+ yrs</span>
+            <span class="timeline-title">Amazon / AWS • Amazon Bar Raiser • AWS Certified</span>
+          </div>
+          <p class="timeline-desc">Architected people programs scaling to 4000+ hires, drove attrition 56%→26%, built Sr Leader Assimilation for 200+ L6+ leaders.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="timeline-year">2010 — 2012</span>
+            <span class="timeline-title">XLRI Jamshedpur • MBA</span>
+          </div>
+          <p class="timeline-desc">Human Resources & Organizational Design foundation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header" style="margin-bottom:24px;">
+        <span class="section-title">What I do</span>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">P</div>
+          <h3>Product Strategy for HR</h3>
+          <p>Treat HR as product. Roadmaps, metrics, adoption. Ship org changes like features with rollback plans.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">AI</div>
+          <h3>AI Organization Design</h3>
+          <p>Delay management, create AI platform roles, design human-AI interfaces. Org that compounds with AI, not fights it.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">↗</div>
+          <h3>Career Path Planning for Human-AI orgs</h3>
+          <p>Role Maturity Framework benchmarked vs Amazon/Microsoft. 16 families, 80+ jobs, with AI absorption curves.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="connect-card">
+        <div class="connect-grid">
+          <div class="connect-left">
+            <h2>Connect</h2>
+            <p>Bengaluru • Open to co-build with AI-native founders. If you ship in code and think in orgs, DM.</p>
+          </div>
+          <div class="connect-links">
+            <a href="https://www.linkedin.com/in/sanuj-krishnan/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/sanuj-krishnan/
+            </a>
+            <a href="https://github.com/sanoojcools" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              github.com/sanoojcools
+            </a>
+            <button onclick="copyEmail(this)" id="emailBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span id="emailText">sanoojcools@gmail.com</span>
+              <svg id="copyIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.6; width:12px; height:12px;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <svg id="checkIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none; width:12px; height:12px; color:#34d399;"><path d="M20 6 9 17l-5-5"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="connect-footer">
+          <span>© <script>document.write(new Date().getFullYear())</script> Sanuj Krishnan</span>
+          <span>•</span>
+          <span>Built with code, not slides</span>
+          <span>•</span>
+          <span>No trackers. No phone number. Privacy-respecting.</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="pb-16"></div>
+
+  </div>
+
+  <script>
+    function copyEmail(btn) {
+      navigator.clipboard.writeText('sanoojcools@gmail.com').then(() => {
+        const text = document.getElementById('emailText');
+        const copyIcon = document.getElementById('copyIcon');
+        const checkIcon = document.getElementById('checkIcon');
+        text.textContent = 'Copied!';
+        text.style.color = '#34d399';
+        copyIcon.style.display = 'none';
+        checkIcon.style.display = 'inline';
+        setTimeout(() => {
+          text.textContent = 'sanoojcools@gmail.com';
+          text.style.color = '';
+          copyIcon.style.display = 'inline';
+          checkIcon.style.display = 'none';
+        }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
