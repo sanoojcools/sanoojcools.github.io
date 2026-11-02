@@ -1,0 +1,315 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Task Is the Unit: What the Science Says About Redesigning Work for AI — Sanuj Krishnan</title><meta name="description" content="An evidence review of how AI changes tasks, teams, roles and quality control, with an eight-step method for redesigning work."><link rel="canonical" href="https://sanoojcools.github.io/writing/the-task-is-the-unit/">
+<meta property="og:type" content="article"><meta property="og:title" content="The Task Is the Unit: What the Science Says About Redesigning Work for AI"><meta property="og:description" content="An evidence review of how AI changes tasks, teams, roles and quality control, with an eight-step method for redesigning work."><meta property="og:image" content="https://sanoojcools.github.io/writing/assets/cover.png"><meta property="og:url" content="https://sanoojcools.github.io/writing/the-task-is-the-unit/"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;background:#FCFCF9;color:#18181b;-webkit-font-smoothing:antialiased}
+::selection{background:#18181b;color:#fff}
+.container{max-width:720px;margin:0 auto;padding:0 24px}
+header{display:flex;align-items:baseline;justify-content:space-between;padding:32px 0;border-bottom:1px solid rgba(228,228,231,.7);gap:16px;flex-wrap:wrap}
+header a.brand{font-weight:600;font-size:15px;letter-spacing:-.025em;color:#18181b;text-decoration:none}
+header nav a{font-size:13px;font-weight:500;color:#18181b;text-decoration:none;border:1px solid #e4e4e7;border-radius:9999px;padding:6px 14px;margin-left:8px}
+header nav a:hover{background:#18181b;color:#fff}
+article{padding:56px 0 64px;font-size:17px;line-height:1.75;color:#27272a}
+article h1{font-size:34px;line-height:1.1;letter-spacing:-.03em;font-weight:700;color:#18181b;margin-bottom:18px}
+@media(min-width:768px){article h1{font-size:42px}}
+article h2{font-size:24px;letter-spacing:-.02em;font-weight:700;color:#18181b;margin:2.4em 0 .6em}
+article h3{font-size:19px;letter-spacing:-.015em;font-weight:600;color:#18181b;margin:1.8em 0 .5em}
+article p{margin:0 0 1.1em}article a{color:#2563eb}
+article strong{color:#18181b}
+article img{display:block;max-width:100%;height:auto;border-radius:16px;border:1px solid #e4e4e7;margin:1.6em 0}
+article table{display:block;overflow-x:auto;width:100%;border-collapse:collapse;font-size:14px;line-height:1.5;margin:1.4em 0}
+article th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#71717a;border-bottom:1.5px solid #18181b;padding:10px 12px;font-weight:600}
+article td{padding:12px;border-bottom:1px solid #e4e4e7;vertical-align:top}
+article blockquote{margin:1.4em 0;padding:14px 18px;border-left:3px solid #2563eb;background:#fff;border-radius:0 12px 12px 0;color:#3f3f46;font-size:15px}
+article blockquote p{margin:.3em 0}
+article hr{border:0;border-top:1px solid #e4e4e7;margin:3em 0}
+article ul,article ol{padding-left:1.3em;margin:0 0 1.1em}article li{margin:.4em 0}
+footer{border-top:1px solid #e4e4e7;padding:28px 0 56px;font-size:13px;color:#71717a}
+footer a{color:#71717a}</style></head><body><div class="container">
+<header><a class="brand" href="/">Sanuj Krishnan</a><nav><a href="/#writing">Writing</a><a href="https://github.com/sanoojcools">GitHub</a></nav></header>
+<article><h1 id="the-task-is-the-unit-what-the-science-says-about-redesigning-work-for-ai">The Task Is the Unit: What the Science Says About Redesigning Work for AI</h1>
+<p><strong>Sanuj Krishnan</strong> · November 2026 · The evidence companion to <em>AI Didn’t Create a Productivity Problem. It Exposed a Redesign Problem.</em></p>
+<p><img alt="Cover" src="../assets/cover.png" /></p>
+<blockquote>
+<p><strong>Two ways to read this.</strong> The short, opinionated essay is in <a href="../ai-redesign-problem/">the essay</a> (about 2,000 words). This document is the evidence behind it: what the research says about redesigning roles, teams and organisations for AI, an eight-step method that follows from it, and every source.</p>
+<p><strong>About the evidence.</strong> Every factual claim is sourced. Working papers and preprints are marked (WP). Where evidence is thin, the text says so. Inferences are labelled as inferences. The closing case is described at a level that protects the organisation involved.</p>
+</blockquote>
+<p><strong>Contents:</strong> <a href="#1-the-gap-nobody-budgets-for">1. The gap</a> · <a href="#2-the-unit-of-change-is-the-task-not-the-job">2. Tasks</a> · <a href="#3-what-the-experiments-actually-show">3. Experiments</a> · <a href="#4-structure-follows-coordination-cost">4. Structure</a> · <a href="#5-redesigning-roles-and-careers">5. Roles and careers</a> · <a href="#6-quality-and-control-verification-is-the-new-bottleneck">6. Quality and control</a> · <a href="#7-the-human-system">7. The human system</a> · <a href="#8-measuring-whether-it-worked">8. Measurement</a> · <a href="#9-the-method-eight-steps-that-follow-from-the-evidence">9. The method</a> · <a href="#10-applying-the-method-what-we-did">10. A case</a> · <a href="#11-what-we-still-do-not-know">11. Open questions</a> · <a href="#references">References</a></p>
+<h2 id="1-the-gap-nobody-budgets-for">1. The gap nobody budgets for</h2>
+<p>In controlled experiments, generative AI makes knowledge workers dramatically more productive. Customer-support agents resolved 15% more issues per hour (Brynjolfsson, Li &amp; Raymond 2025). Professionals finished writing tasks in 40% less time, at 18% higher quality (Noy &amp; Zhang 2023). Across three field experiments with nearly 5,000 developers, those given an AI assistant completed 26% more tasks (Cui et al. 2025).</p>
+<p>Now look at the economy. Linking survey responses to Danish administrative records for 25,000 workers in the most exposed occupations, Humlum and Vestergaard (2025) found AI chatbots saved about 3% of working hours, and could rule out any effect on earnings above 1%.</p>
+<p>Both findings are sound. The distance between them is the subject of this article.</p>
+<p>Economists have a name for part of it. When a general-purpose technology arrives, firms must invest in things that never appear on a balance sheet: new processes, new skills, new roles. Measured productivity dips before it rises. Brynjolfsson, Rock and Syverson (2021) call this the productivity J-curve, and estimate that adjusting for these unmeasured investments would have put US productivity about 16% higher than official figures by 2017.</p>
+<p>The practical reading is blunt. A tool raises output on a task. Only redesign raises output in an organisation. Handing out licences changes the first; it does not change the second.</p>
+<p>This article sets out what the research says about that redesign: how AI changes tasks, teams, hierarchies, roles, quality control and the people inside them, and what method follows from the evidence. Every claim carries its source. Where the evidence is thin, I say so. The last part describes how we applied this method to an engineering organisation, including what went wrong.</p>
+<h2 id="2-the-unit-of-change-is-the-task-not-the-job">2. The unit of change is the task, not the job</h2>
+<p>Labour economists stopped thinking about technology and jobs two decades ago. They think about technology and tasks. A job is a bundle of tasks. A technology changes the cost of doing some of those tasks, and the job changes shape around it.</p>
+<p>The foundational evidence came from computerisation. Autor, Levy and Murnane (2003) showed that computers replaced routine tasks that follow explicit rules and complemented non-routine problem-solving and communication. Shifts in task content within the same job titles explained about 60% of the rising demand for college-educated labour between 1970 and 1998. The job titles stayed. The work inside them changed.</p>
+<p>Acemoglu and Restrepo (2019) formalised the two forces at play. Automation <strong>displaces</strong> people from tasks they used to do. New technology also <strong>reinstates</strong> labour by creating tasks that did not exist before. Which force wins decides whether a technology raises or lowers demand for people. In their later work, tasks lost to automation accounted for 50–70% of the change in the US wage structure over four decades (Acemoglu &amp; Restrepo 2022).</p>
+<p>Three verbs follow, and they are the vocabulary of any redesign:</p>
+<ul>
+<li><strong>Automate:</strong> the task moves from a person to the system.</li>
+<li><strong>Augment:</strong> the person keeps the task and does it faster or better.</li>
+<li><strong>Create:</strong> a new task appears, such as checking AI output or designing the workflow it runs in.</li>
+</ul>
+<p>For generative AI today, the experimental evidence is dominated by augmentation. Pure automation of whole roles is still rare in the studies, and new task creation is real but poorly measured (more on this in sections 3 and 6).</p>
+<h3 id="what-exposure-scores-can-and-cannot-tell-you">What exposure scores can and cannot tell you</h3>
+<p>The best-known attempt to map generative AI onto tasks is Eloundou and colleagues' "GPTs are GPTs" (published in <em>Science</em> in 2024). They scored every task in the US occupational database for whether a language model could cut its time by half at the same quality. About 80% of US workers had at least 10% of their tasks exposed, and about 19% had at least half exposed. Other indices, such as Felten, Raj and Seamans' (2021) AI Occupational Exposure measure, use different methods and only partly agree.</p>
+<p>Exposure scores are a useful first map. They are a poor guide to redesign on their own, for three reasons:</p>
+<ol>
+<li><strong>They measure what is technically possible, not what is economic.</strong> They ignore integration cost, regulation and the redesign the J-curve demands.</li>
+<li><strong>They miss the jagged frontier.</strong> Two tasks that look equally hard can fall on opposite sides of what a model can actually do (section 3).</li>
+<li><strong>They cannot see new tasks.</strong> The verification and coordination work that AI creates does not appear in a list of existing tasks.</li>
+</ol>
+<p>The implication is simple: start redesign at the task level, use exposure scores to decide where to look, and decide what to change from local evidence.</p>
+<h2 id="3-what-the-experiments-actually-show">3. What the experiments actually show</h2>
+<p>The randomised and natural experiments on generative AI at work now form a consistent picture. It has four parts.</p>
+<p><strong>First, gains on well-defined tasks are large.</strong> Agents in a Fortune 500 software firm's support centre resolved 15% more issues per hour after an AI assistant was rolled out in stages (Brynjolfsson, Li &amp; Raymond 2025; 5,172 agents). Professionals given ChatGPT finished writing tasks 40% faster with 18% higher quality (Noy &amp; Zhang 2023; 453 participants). Developers given GitHub Copilot built a small web server 55.8% faster in a lab test (Peng et al. 2023). The field evidence is smaller but still substantial: 26% more completed tasks across three randomised experiments at Microsoft, Accenture and a Fortune 100 firm (Cui et al. 2025; 4,867 developers).</p>
+<p><strong>Second, the least experienced gain most.</strong> In the support centre, the newest and lowest-skilled agents improved by about 34%; the most experienced barely improved at all. In the writing study, lower performers gained more and the spread of quality narrowed. The mechanism, in Brynjolfsson and colleagues' reading, is that the AI captures the tacit know-how of top performers and hands it to everyone. This compression has a consequence for careers that section 5 takes up.</p>
+<p><strong>Third, the frontier is jagged.</strong> Dell'Acqua and colleagues ran a pre-registered experiment with 758 Boston Consulting Group consultants (published in <em>Organization Science</em>, 2026). On 18 realistic tasks inside GPT-4's capability, consultants with AI completed 12.2% more work, 25.1% faster, at more than 40% higher quality. On one task designed to sit just outside that capability, consultants with AI were <strong>19 percentage points less likely</strong> to reach the correct answer than those without. The tasks looked similar in difficulty. The AI's output looked equally convincing on both. The boundary was invisible to the people using it.</p>
+<p><strong>Fourth, experts on familiar work can get slower.</strong> METR ran a randomised trial with 16 experienced open-source developers working on their own mature codebases, using early-2025 tools. With AI they took 19% longer. Before the study they had forecast a 24% speed-up; afterwards they still believed they had been 20% faster (Becker et al. 2025). The sample is small and the tools have improved since. But the gap between perceived and measured speed is the finding no leader should ignore.</p>
+<h3 id="reading-the-four-together">Reading the four together</h3>
+<p>The positive and negative software results are not in conflict. Gains are largest where the AI supplies knowledge the person lacks and the output is easy to check. They shrink, or reverse, where the person already knows the system well and checking the AI's work costs more than doing it. That cost of checking is the hinge of the whole field, and it returns in section 6.</p>
+<p>Two cautions apply to every number above. Most come from single tasks over hours or weeks, not from whole jobs over years. And all of them measure chat-style assistants; agentic systems that plan and act across many steps have barely been studied in the field (section 11).</p>
+<p><img alt="AI gains are large inside the frontier and turn negative outside it" src="../assets/effect-sizes.png" /></p>
+<p>The five gains come from tasks inside the AI's capability; the two losses come from work just outside it and from experts on systems they already know.</p>
+<h2 id="4-structure-follows-coordination-cost">4. Structure follows coordination cost</h2>
+<p>Organisational structure exists to manage dependencies between tasks (Malone &amp; Crowston 1994). Change the cost of managing those dependencies and structure shifts. Generative AI lowers two different costs at once, and they pull in opposite directions.</p>
+<p>Bloom, Garicano, Sadun and Van Reenen (2014) showed this distinction with data from US and European manufacturers. Technologies that let front-line workers <strong>acquire knowledge</strong> (solve more problems themselves) pushed decisions down and widened spans of control. Technologies that made <strong>communication</strong> cheaper let the centre direct more, and pulled decisions up. Generative AI does both. Used as a front-line assistant, it behaves like the first kind: support agents asked managers to step in less often (Brynjolfsson, Li &amp; Raymond 2025), and developers given Copilot shifted their time from project management toward coding (Hoffmann et al. 2024). Used as a reporting and monitoring layer, it behaves like the second.</p>
+<p>So the first structural question about any AI deployment is which cost it mainly reduces: knowledge to the edge, or visibility to the centre.</p>
+<h3 id="fewer-layers-different-managers">Fewer layers, different managers</h3>
+<p>Garicano's (2000) model treats a firm as a hierarchy of problem-solvers. Routine problems are handled at the front line; exceptions travel up to people who know more. Make knowledge cheaper and fewer problems need to travel, so layers fall and spans widen. Firm data mostly fit this: companies that invested in AI became flatter (Babina et al. 2023; Ewens &amp; Giroud 2025).</p>
+<p>But the same period shows AI-adopting firms posting <strong>more</strong> managerial vacancies, not fewer, across 375 million US job postings. What changed was the content: less budgeting, planning and staff administration; more stakeholder management, coordination and growth (Alekseeva et al. 2026). The best reading of the evidence is that AI removes managers whose job is relaying information, and raises demand for managers who integrate work and develop people.</p>
+<p>That second kind is not a luxury. Replacing a bottom-10% manager with a top-10% one raised a team's output about as much as adding a worker to a nine-person team (Lazear, Shaw &amp; Stanton 2015), and managers' people skills measurably reduce attrition (Hoffman &amp; Tadelis 2021). Earlier waves of delayering, sold as empowerment, often concentrated decisions at the top instead (Wulf 2012).</p>
+<h3 id="one-person-with-ai-can-replace-a-small-team-sometimes">One person with AI can replace a small team, sometimes</h3>
+<p>In a pre-registered experiment with 776 professionals at Procter &amp; Gamble, individuals working with AI improved the quality of product-innovation solutions by 0.37 standard deviations, slightly more than two-person teams without AI (0.24). Teams with AI did best, and were about three times more likely to produce top-decile ideas (Dell'Acqua et al. 2025). AI also erased the usual gap between technical and commercial thinking: a person's function no longer predicted the kind of solution they produced.</p>
+<p>The wider evidence is more sobering. Across 106 experiments, human–AI pairs did better than humans alone but <strong>worse</strong> than the better of the human or the AI working separately (Vaccaro, Almaatouq &amp; Malone 2024). Pairs lost most on decision tasks and gained on creation tasks. Combination helped when the human was better than the AI at the task, and hurt when the AI was better.</p>
+<h3 id="conways-law-applies-to-agents">Conway's law applies to agents</h3>
+<p>Conway (1968) observed that systems mirror the communication structure of the organisations that build them. A review of 142 studies finds the pattern common but breakable through deliberate design (Colfer &amp; Baldwin 2016). Multi-agent AI systems fail for organisational reasons: poorly specified roles, misaligned agents and weak verification (Cemri et al. 2025). The practical consequence is direct. If a function such as QA or UX sits outside a team in the org chart, the agent workflow will route around it, and the work will drift back across that boundary. There is no causal evidence yet on the right size or shape of a human-plus-agent team.</p>
+<h2 id="5-redesigning-roles-and-careers">5. Redesigning roles and careers</h2>
+<p>If the task is the unit, role redesign is a three-step craft: decompose each role into its tasks, decide for each task whether to automate, augment or keep it human, and rebundle what remains into roles people can do well and want to do.</p>
+<p>The rebundling step has the strongest research base. Work-design research, synthesised by Parker (2014), finds that autonomy, variety and feedback predict performance, wellbeing and learning across hundreds of studies. Job crafting research shows that people who reshape their own tasks and relationships find more meaning in the work (Wrzesniewski &amp; Dutton 2001). Both point the same way: roles redesigned <em>with</em> the people in them hold up better than roles redesigned <em>for</em> them. Both also carry a warning. Unstructured crafting can produce roles that duplicate each other or drop work the organisation needs.</p>
+<h3 id="the-junior-pipeline-is-the-first-casualty">The junior pipeline is the first casualty</h3>
+<p>The clearest labour-market signal of generative AI so far falls on early-career workers. Using monthly payroll data from ADP covering millions of US workers, Brynjolfsson, Chandar and Chen find that employment of 22–25-year-olds in the most AI-exposed occupations now stands 19% below where it would be had it kept pace with less-exposed peers (August 2026 version, covering November 2022 to June 2026). Older workers in the same occupations did not decline. The effect is concentrated where AI automates tasks rather than augments them, and it runs through reduced hiring, not layoffs. The study is observational and still a working paper; other forces in the tech labour market may contribute.</p>
+<p>The mechanism matters more than the number. Expertise is built through deliberate practice with feedback (Ericsson, Krampe &amp; Tesch-Römer 1993) and through apprenticeship, where newcomers learn by doing the peripheral work of a practice before they move to its core (Lave &amp; Wenger 1991). The tasks AI absorbs first, such as first drafts, routine fixes and simple analysis, are exactly that peripheral work. Section 3 showed AI lifts novices most. The danger is that it lifts their output while removing the practice that would have made them experts.</p>
+<h3 id="deskilling-is-measurable">Deskilling is measurable</h3>
+<p>The best real-world evidence comes from medicine. Nineteen experienced endoscopists in Poland, each with more than 2,000 procedures behind them, worked with an AI detection aid for several months. When they then worked without it, their adenoma detection rate fell from 28.4% to 22.4% (Budzyń et al. 2025, <em>Lancet Gastroenterology &amp; Hepatology</em>). The study is observational, not randomised, but the direction is what Bainbridge (1983) predicted four decades ago: skills not practised decay.</p>
+<p>In knowledge work, a survey of 319 professionals found that the more people trusted generative AI, the less critical thinking they reported applying, while the more they trusted their own ability, the more they applied (Lee et al. 2025). Their effort shifted from producing work to verifying, integrating and stewarding it.</p>
+<p>That shift tells us which skills rise in value: framing the problem, judging output, handling exceptions, and holding enough domain depth to know when the AI is wrong.</p>
+<h3 id="ladders-levels-and-attribution">Ladders, levels and attribution</h3>
+<p>When AI assists individual output, volume measures such as lines of code, tickets closed or documents produced stop measuring the person. No study has yet tested a redesigned career ladder for AI-assisted work, so what follows is inference from work-design research and the evidence above. Levelling criteria should weight judgement, verification quality, exception handling and the development of others. Contribution needs an honest account of what was generated, what was checked and what was decided by whom.</p>
+<p>On skills-based organisations, the evidence is advocacy, not science. Vendor surveys report strong executive interest, but no rigorous study compares skills-based and job-based models on business outcomes. A skills layer on top of jobs is defensible for workforce planning. Replacing jobs with skills is a bet, not an evidence-based practice.</p>
+<h2 id="6-quality-and-control-verification-is-the-new-bottleneck">6. Quality and control: verification is the new bottleneck</h2>
+<p>In 1983 Lisanne Bainbridge described the ironies of automation. Automation takes over the easy parts of a job and leaves people the hard, rare exceptions. It removes the practice that keeps their skills sharp. Then it relies on those same out-of-practice people to monitor it and step in when it fails, and people monitor poorly over long periods. Human-factors research confirmed that operators taken out of the loop notice failures later and recover worse (Endsley &amp; Kiris 1995).</p>
+<p>Each irony has a direct analogue in AI-assisted knowledge work: juniors lose the routine work that built expertise, reviewers face high volumes of fluent output, and the work escalated to people is the hardest residue.</p>
+<h3 id="automation-bias-reaches-experts">Automation bias reaches experts</h3>
+<p>People tend to follow automated advice even when it is wrong. This is among the best-replicated findings in human factors (Skitka, Mosier &amp; Burdick 1999; Goddard, Roudsari &amp; Wyatt 2012). Expertise does not protect against it. When a purported AI suggested wrong categories for mammograms, accuracy fell from 80% to 20% for inexperienced radiologists and from 82% to 46% for very experienced ones (Dratsch et al. 2023). Developers with an AI assistant wrote less secure code and were more confident it was secure (Perry et al. 2023).</p>
+<p>The opposite error exists too. In a pre-registered experiment with 227 radiologists, doctors under-weighted correct AI predictions, so AI assistance did not improve their average accuracy (Agarwal et al. 2023). And physicians working with GPT-4 did no better on diagnostic reasoning than physicians alone, while GPT-4 on its own scored higher (Goh et al. 2024). People defer to AI when they should not, and dismiss it when they should not.</p>
+<p>The fixes that sound obvious work poorly. AI explanations increased acceptance of AI advice whether it was right or wrong (Bansal et al. 2021). What does reduce over-reliance is cognitive forcing: asking people to commit to their own answer before seeing the AI's. People dislike it, and it helps most those who enjoy effortful thinking (Buçinca, Malaya &amp; Gajos 2021).</p>
+<h3 id="the-cost-of-checking">The cost of checking</h3>
+<p>AI cuts the cost of producing work far more than the cost of checking it. The evidence for this comes from three directions:</p>
+<ul>
+<li><strong>Workers:</strong> in Denmark, AI created new tasks for 8.4% of workers, including checking its output, while saving about 3% of hours (Humlum &amp; Vestergaard 2025).</li>
+<li><strong>Software delivery:</strong> Google's DORA programme found that a 25% rise in AI adoption went with 7.2% lower delivery stability in its 2024 survey of about 39,000 professionals. This is a vendor-run survey, so treat it as context, not proof.</li>
+<li><strong>Experts:</strong> METR's developers were slower largely because prompting, waiting for and reviewing output cost more time than it saved; they accepted fewer than 44% of the AI's suggestions (Becker et al. 2025).</li>
+</ul>
+<p>No study yet measures what share of AI gains verification consumes in a real enterprise. The arithmetic is still clear: net gain equals time saved in production, minus review time, rework and the cost of defects that escape. That makes verification design the main lever on net productivity.</p>
+<h3 id="why-processes-slide-back">Why processes slide back</h3>
+<p>A routine has two sides: the written pattern, and what people actually do on a given day (Feldman &amp; Pentland 2003). Changing the first does not change the second. The same scanner produced different working structures in two hospitals, depending on how people enacted it (Barley 1986). In 16 hospitals adopting a new cardiac surgery technique, the teams that made it stick had leaders who framed it as a learning challenge and built psychological safety; the others reverted (Edmondson, Bohmer &amp; Pisano 2001). Under delivery pressure, managers choose "work harder" over "work smarter", capability erodes, and the failure is then blamed on the workers (Repenning &amp; Sterman 2002).</p>
+<p>Together these predict three things about any AI redesign. Drift back to old routines is the default. It shows first in the most person-dependent steps. And correcting it depends on local leaders more than on dashboards.</p>
+<h3 id="who-should-be-in-the-loop">Who should be in the loop</h3>
+<p>The evidence supports deciding human involvement task by task, from measured performance rather than habit:</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Design the evidence supports</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI clearly outperforms people; errors recoverable, feedback fast</td>
+<td>AI decides routine cases; people audit samples and outcomes</td>
+</tr>
+<tr>
+<td>People outperform AI, or hold context it lacks</td>
+<td>Person decides; AI is an input, after the person's own first judgement</td>
+</tr>
+<tr>
+<td>Competence varies case by case</td>
+<td>AI triages and hands hard cases to people, not the reverse (Fügener et al. 2022)</td>
+</tr>
+<tr>
+<td>High stakes, irreversible or regulated</td>
+<td>Person decides, with accountability, logged overrides and a test of whether review catches errors</td>
+</tr>
+</tbody>
+</table>
+<p>The last row matters most, because a review requirement on its own often catches little and creates false comfort (Green 2022). The table is a synthesis of several studies (Vaccaro et al. 2024; Agarwal et al. 2023; Kahneman &amp; Klein 2009), not a tested protocol.</p>
+<h2 id="7-the-human-system">7. The human system</h2>
+<p>A redesign changes what people do, and it also changes who they are at work. The research on how people experience technological change is older than generative AI and well replicated. It applies directly.</p>
+<p><strong>Technostress is real and measurable.</strong> Information-systems research identified five sources of technology-related stress: overload, invasion of personal time, complexity, insecurity and uncertainty, and showed they reduce productivity and job satisfaction (Tarafdar et al. 2007). Early studies of generative AI find the same pattern, with an added threat to professional self-esteem when AI performs the tasks at the centre of a person's identity, such as coding for engineers or diagnosis for doctors. Those AI-specific studies are recent and mostly surveys; the underlying mechanism is not in doubt.</p>
+<p><strong>Adoption depends on support more than enthusiasm.</strong> The Unified Theory of Acceptance and Use of Technology combined eight earlier models and explained about 70% of the variation in people's intention to use a new system (Venkatesh et al. 2003). Four things drive it: whether people expect it to help, whether it is easy, whether people around them use it, and whether the organisation provides the conditions to use it well. The last of these, time, training and support, is what turns intention into sustained use.</p>
+<p><strong>Trust has to be calibrated, not maximised.</strong> Lee and See (2004) define good trust in automation as trust that matches what the system can actually do, and that can tell when it works and when it does not. Too much trust produces the automation bias in section 6. Too little produces disuse. Calibration is built through direct experience with feedback on when the AI was right or wrong, which is why showing people AI failures early is more useful than showing them demos.</p>
+<h3 id="fairness-decides-acceptance">Fairness decides acceptance</h3>
+<p>One of the most replicated findings in organisational psychology is that people judge change by the fairness of the process, not only by its outcome. A meta-analysis of 183 studies found four forms of fairness each independently predicted trust, commitment and performance: fair distribution of outcomes, a fair process, respectful treatment, and honest, timely explanation (Colquitt et al. 2001). A fair process means people affected have a voice, criteria are consistent, bias is suppressed and decisions can be corrected. It softens even unfavourable outcomes, though it does not remove their sting.</p>
+<h3 id="the-people-who-stay">The people who stay</h3>
+<p>Restructuring affects those who keep their jobs as well as those who lose them. Research on downsizing since the 1990s documents "survivor" effects: lower trust, less commitment, more risk aversion and higher intention to leave (Noer 1993; Cascio 1993). The strength of these effects depends heavily on how fairly the process is seen to have been run.</p>
+<p>On redeployment, the honest position is that the evidence is thin. There is no rigorous comparison of redeployment against redundancy, and no reliable published benchmark for redeployment success rates. What predicts success has to be inferred from the fairness and work-design literatures: voice in the move, real skill-building, and a credible new career path.</p>
+<h2 id="8-measuring-whether-it-worked">8. Measuring whether it worked</h2>
+<p>Most organisations cannot say whether their AI redesign worked, because they changed many things at once and measured the wrong ones. Three disciplines fix this.</p>
+<p><strong>Measure outcomes, not activity.</strong> In software, the DORA measures of delivery speed and stability (how often teams deploy, how long changes take, how often they fail, how fast service recovers) have the strongest research base (Forsgren, Humble &amp; Kim 2018). The SPACE framework adds satisfaction, collaboration and efficiency so no single number dominates (Forsgren et al. 2021). Section 6 adds one more that AI makes essential: the rate at which defects escape review.</p>
+<p><strong>Expect Goodhart's law.</strong> When a measure becomes a target, it stops being a good measure (Strathern 1997, restating Goodhart). AI makes activity metrics trivially easy to inflate: more lines of code, more tickets split into smaller tickets, more documents. METR's developers believed they were 20% faster while measured as 19% slower; self-reported speed is the most easily inflated metric of all.</p>
+<p><strong>Design for attribution before rollout.</strong> To separate the effect of AI from everything else changing at the same time, firms can use the same designs economists use: staggered rollout across teams, holdout groups that keep the old process for a defined period, and comparison of the change in treated teams against the change in untreated ones. The support-centre study above is exactly this design (Brynjolfsson, Li &amp; Raymond 2025). A team's comparison against its own past performance is useful, but it cannot rule out other causes.</p>
+<h3 id="a-balanced-scorecard">A balanced scorecard</h3>
+<p>Optimising for cost or speed alone degrades quality and drives out the people who carry the organisation's knowledge. The scorecard needs five dimensions together: cost, speed, quality (including escaped defects), retention of critical talent, and employee experience. The research does not yet tell us which early measures best predict whether a redesign will hold after six to twelve months. The candidates the evidence points to are sustained use in core workflows, verification time, override rates, rework, and the share of work actually routed through the new process.</p>
+<h2 id="9-the-method-eight-steps-that-follow-from-the-evidence">9. The method: eight steps that follow from the evidence</h2>
+<p>Put the findings together and a method falls out. Each step answers a specific finding above.</p>
+<ol>
+<li><strong>Map tasks, not jobs.</strong> Break each role into its tasks and use exposure scores only to decide where to look. <em>Why:</em> technology acts on tasks; exposure scores cannot see the jagged frontier or new tasks (section 2).</li>
+<li><strong>Name what each deployment does to coordination.</strong> Is it putting knowledge at the front line, or giving the centre more visibility? <em>Why:</em> the two push structure in opposite directions (section 4).</li>
+<li><strong>Find your own frontier.</strong> Test the AI on your actual tasks, measuring quality as well as speed, for juniors and experts separately. Decide automate, augment, keep or create from those results. <em>Why:</em> gains are large inside the frontier and negative outside it, and people cannot see the boundary (section 3).</li>
+<li><strong>Rebundle roles with the people in them.</strong> Redesign around autonomy, variety and feedback, and build deliberate practice into junior roles on purpose. <em>Why:</em> co-designed roles last longer, and AI removes the work that used to train people (section 5).</li>
+<li><strong>Redesign teams and agent workflows together.</strong> Put every function a workflow depends on inside the team boundary. Remove layers that relay information; invest in managers who integrate and develop people. <em>Why:</em> workflows mirror the org chart, and AI cuts relay work while raising demand for integration (section 4).</li>
+<li><strong>Build verification before scaling generation.</strong> Set who decides each task from measured performance, make automated tests the first reviewer, require independent first judgements where people decide, and track overrides and escaped defects. <em>Why:</em> checking is the bottleneck, and automation bias reaches experts (section 6).</li>
+<li><strong>Design the human system, do not manage it afterwards.</strong> Audit fairness before announcing anything, fund time and support for adoption, calibrate trust with real failures, and plan for the people who stay. <em>Why:</em> process fairness predicts acceptance independently of outcome (section 7).</li>
+<li><strong>Measure, attribute, and assign correction.</strong> Stagger the rollout, keep comparison groups, score five dimensions together, measure what people actually do rather than what the process says, and give named local leaders the job of correcting drift. Then return to step 1, because the frontier moves. <em>Why:</em> drift is the default, and dashboards detect it but do not reverse it (sections 6 and 8).</li>
+</ol>
+<p>The evidence also names the five most common mistakes, which are the steps above skipped:</p>
+<ul>
+<li>Redesigning job titles instead of tasks.</li>
+<li>Scaling AI output without scaling the capacity to check it.</li>
+<li>Automating junior work without rebuilding the path to expertise.</li>
+<li>Cutting managers on the assumption that their only job is passing information along.</li>
+<li>Changing the documented process and assuming practice has followed.</li>
+</ul>
+<p><img alt="The redesign method: eight steps in a loop" src="../assets/method.png" /></p>
+<p>The method is a loop, not a project plan: step 8 feeds back into step 1 because the AI's capability boundary keeps moving.</p>
+<h2 id="10-applying-the-method-what-we-did">10. Applying the method: what we did</h2>
+<p>In one recent engagement, I led the people side of an AI-native redesign of an engineering organisation in a mid-sized technology services business. Engineering had been left out of earlier restructuring rounds and had no clear AI story. Trust was already strained after a long period of tight pay and promotion decisions, and burnout and attrition were rising. That is the starting point the research on fairness and survivors warns about: an organisation already short of trust.</p>
+<p>Our first decision was to frame the work as a capability redesign rather than a cost exercise. We agreed that framing with the chief executive and the head of HR, and HR co-owned the programme with the technology leadership. Engineering built the delivery pods and the AI-enabled development stages; HR owned the role, structure, people and fairness design around them.</p>
+<h3 id="results-within-six-months">Results within six months</h3>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Delivery pods meeting their velocity targets</td>
+<td>Most, measured against each pod's own baseline</td>
+</tr>
+<tr>
+<td>First-submission quality</td>
+<td>Up by roughly a quarter within weeks</td>
+</tr>
+<tr>
+<td>Engineering cost relative to revenue</td>
+<td>Down meaningfully</td>
+</tr>
+<tr>
+<td>Leadership roles and headcount</td>
+<td>Each down by about a fifth, including redeployment</td>
+</tr>
+<tr>
+<td>People redeployed into new roles</td>
+<td>Nine in ten still in role after six months</td>
+</tr>
+<tr>
+<td>Customer deployments interrupted</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<p>Section 8 applies to our own numbers. The gains are measured against each team's own past performance, not against a comparison group, so they cannot be attributed to AI alone. Not every pod met its target, which is consistent with the jagged frontier: the same tools helped some kinds of work far more than others.</p>
+<h3 id="what-went-wrong">What went wrong</h3>
+<p>Two functions, user experience and quality assurance, slid back to person-driven work, and some high performers left.</p>
+<p>The research in sections 4 and 6 offers an explanation, which I state as interpretation rather than proof. Routines change on paper before they change in practice (Feldman &amp; Pentland 2003). Functions outside a team's core workflow are where work drifts back across the boundary (Conway 1968; Colfer &amp; Baldwin 2016). And verification work, the part AI makes more important, is the part least visible to the people being measured.</p>
+<p>The sharper lesson is about correction. Our mechanisms detected the drift. Correcting it depended on who was in the seat. That is exactly what Edmondson, Bohmer and Pisano (2001) found in hospitals two decades ago: the teams that made a new technology stick had local leaders who treated it as a learning challenge. <strong>Detecting drift is not the same as correcting it.</strong> If I ran the redesign again, step 8 of the method would start on day one, with named owners for every function at risk of sliding back.</p>
+<h2 id="11-what-we-still-do-not-know">11. What we still do not know</h2>
+<p>The research is strong on tasks and weak on organisations over time. Five questions remain open, and any leader claiming certainty on them is ahead of the evidence:</p>
+<ol>
+<li><strong>How long is the J-curve for generative AI?</strong> Task-level gains are proven; firm-level gains are not yet measurable at scale. Settling this needs multi-year, multi-firm data that tracks redesign investment, not just tool adoption.</li>
+<li><strong>Does AI flatten firms or change what managers do?</strong> Firms flatten after AI investment, yet AI adopters hire more managers. No causal study yet separates the two.</li>
+<li><strong>Is the fall in early-career employment caused by AI?</strong> The pattern is large and consistent with AI's effects on tasks, but it is observational, and other forces in the tech labour market overlap in time.</li>
+<li><strong>Do findings from chat assistants hold for agents?</strong> Almost every experiment above studied assistants that answer one prompt at a time. Agents that plan and act across many steps will change both the gains and the error profile, and verification will matter even more. The early evidence is mostly laboratory work.</li>
+<li><strong>How much skill do people lose, and does it come back?</strong> Deskilling is now demonstrated in medicine and reported in knowledge work. Its size, its persistence and the best way to prevent it are unknown.</li>
+</ol>
+<p>The three findings most likely to hold are the ones this article is built on: AI acts on tasks, not jobs; its gains are large inside a jagged frontier and negative outside it; and those gains reach the organisation only through deliberate redesign of roles, teams, controls and careers. That last finding is why this is HR's work as much as technology's.</p>
+<h2 id="references">References</h2>
+<p>Working papers and preprints are marked (WP). DORA is a vendor-run survey, cited as context only.</p>
+<ul>
+<li>Acemoglu, D. &amp; Restrepo, P. (2019). Automation and new tasks. <em>Journal of Economic Perspectives</em> 33(2). <a href="https://doi.org/10.1257/jep.33.2.3">doi:10.1257/jep.33.2.3</a></li>
+<li>Acemoglu, D. &amp; Restrepo, P. (2022). Tasks, automation, and the rise in US wage inequality. <em>Econometrica</em> 90(5). <a href="https://doi.org/10.3982/ECTA19815">doi:10.3982/ECTA19815</a></li>
+<li>Agarwal, N., Moehring, A., Rajpurkar, P. &amp; Salz, T. (2023). Combining human expertise with artificial intelligence: Experimental evidence from radiology. NBER WP 31422 (WP). <a href="https://doi.org/10.3386/w31422">doi:10.3386/w31422</a></li>
+<li>Alekseeva, L., Azar, J., Giné, M. &amp; Samila, S. (2026). AI adoption and the demand for managerial expertise. <em>Strategic Management Journal</em>. <a href="https://doi.org/10.1002/smj.70099">doi:10.1002/smj.70099</a></li>
+<li>Autor, D., Levy, F. &amp; Murnane, R. (2003). The skill content of recent technological change. <em>Quarterly Journal of Economics</em> 118(4). <a href="https://doi.org/10.1162/003355303322552801">doi:10.1162/003355303322552801</a></li>
+<li>Babina, T., Fedyk, A., He, A. &amp; Hodson, J. (2023). Firm investments in AI technologies and changes in workforce composition. NBER WP 31325. <a href="https://www.nber.org/papers/w31325">nber.org/papers/w31325</a></li>
+<li>Bainbridge, L. (1983). Ironies of automation. <em>Automatica</em> 19(6). <a href="https://doi.org/10.1016/0005-1098(83)90046-8">doi:10.1016/0005-1098(83)90046-8</a></li>
+<li>Bansal, G. et al. (2021). Does the whole exceed its parts? <em>CHI '21</em>. <a href="https://doi.org/10.1145/3411764.3445717">doi:10.1145/3411764.3445717</a></li>
+<li>Barley, S. (1986). Technology as an occasion for structuring. <em>Administrative Science Quarterly</em> 31(1). <a href="https://doi.org/10.2307/2392767">doi:10.2307/2392767</a></li>
+<li>Becker, J., Rush, N., Barnes, E. &amp; Rein, D. (2025). Measuring the impact of early-2025 AI on experienced open-source developer productivity (WP). <a href="https://arxiv.org/abs/2507.09089">arXiv:2507.09089</a></li>
+<li>Bloom, N., Garicano, L., Sadun, R. &amp; Van Reenen, J. (2014). The distinct effects of information technology and communication technology on firm organization. <em>Management Science</em> 60(12). <a href="https://doi.org/10.1287/mnsc.2014.2013">doi:10.1287/mnsc.2014.2013</a></li>
+<li>Brynjolfsson, E., Chandar, B. &amp; Chen, R. (2026). Canaries in the coal mine? Six facts about the recent employment effects of AI, August 2026 version (WP). <a href="https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf">Stanford Digital Economy Lab</a></li>
+<li>Brynjolfsson, E., Li, D. &amp; Raymond, L. (2025). Generative AI at work. <em>Quarterly Journal of Economics</em> 140(2). <a href="https://doi.org/10.1093/qje/qjae044">doi:10.1093/qje/qjae044</a></li>
+<li>Brynjolfsson, E., Rock, D. &amp; Syverson, C. (2021). The productivity J-curve. <em>American Economic Journal: Macroeconomics</em> 13(1). <a href="https://doi.org/10.1257/mac.20180386">doi:10.1257/mac.20180386</a></li>
+<li>Buçinca, Z., Malaya, M. &amp; Gajos, K. (2021). To trust or to think. <em>Proc. ACM HCI</em> 5(CSCW1). <a href="https://doi.org/10.1145/3449287">doi:10.1145/3449287</a></li>
+<li>Budzyń, K. et al. (2025). Endoscopist deskilling risk after exposure to AI in colonoscopy. <em>Lancet Gastroenterology &amp; Hepatology</em> 10. <a href="https://doi.org/10.1016/S2468-1253(25)00133-5">doi:10.1016/S2468-1253(25)00133-5</a></li>
+<li>Cascio, W. (1993). Downsizing: What do we know? What have we learned? <em>Academy of Management Executive</em> 7(1).</li>
+<li>Cemri, M. et al. (2025). Why do multi-agent LLM systems fail? (WP). <a href="https://arxiv.org/abs/2503.13657">arXiv:2503.13657</a></li>
+<li>Colfer, L. &amp; Baldwin, C. (2016). The mirroring hypothesis. <em>Industrial and Corporate Change</em> 25(5). <a href="https://doi.org/10.1093/icc/dtw027">doi:10.1093/icc/dtw027</a></li>
+<li>Colquitt, J. et al. (2001). Justice at the millennium. <em>Journal of Applied Psychology</em> 86(3). <a href="https://doi.org/10.1037/0021-9010.86.3.425">doi:10.1037/0021-9010.86.3.425</a></li>
+<li>Conway, M. (1968). How do committees invent? <em>Datamation</em> 14(4).</li>
+<li>Cui, Z., Demirer, M., Jaffe, S., Musolff, L., Peng, S. &amp; Salz, T. (2025). The effects of generative AI on high-skilled work: Evidence from three field experiments with software developers (WP). <a href="https://arxiv.org/abs/2406.11671">arXiv:2406.11671</a></li>
+<li>Dell'Acqua, F. et al. (2026). Navigating the jagged technological frontier. <em>Organization Science</em>. <a href="https://doi.org/10.1287/orsc.2025.21838">doi:10.1287/orsc.2025.21838</a></li>
+<li>Dell'Acqua, F. et al. (2025). The cybernetic teammate. NBER WP 33641 (WP). <a href="https://www.nber.org/papers/w33641">nber.org/papers/w33641</a></li>
+<li>DORA / Google Cloud (2024). <em>Accelerate State of DevOps Report</em> (vendor survey, context only).</li>
+<li>Dratsch, T. et al. (2023). Automation bias in mammography. <em>Radiology</em> 307(4). <a href="https://doi.org/10.1148/radiol.222176">doi:10.1148/radiol.222176</a></li>
+<li>Edmondson, A., Bohmer, R. &amp; Pisano, G. (2001). Disrupted routines. <em>Administrative Science Quarterly</em> 46(4). <a href="https://doi.org/10.2307/3094828">doi:10.2307/3094828</a></li>
+<li>Eloundou, T., Manning, S., Mishkin, P. &amp; Rock, D. (2024). GPTs are GPTs. <em>Science</em> 384.</li>
+<li>Endsley, M. &amp; Kiris, E. (1995). The out-of-the-loop performance problem. <em>Human Factors</em> 37(2). <a href="https://doi.org/10.1518/001872095779064555">doi:10.1518/001872095779064555</a></li>
+<li>Ericsson, K. A., Krampe, R. &amp; Tesch-Römer, C. (1993). The role of deliberate practice. <em>Psychological Review</em> 100(3). <a href="https://doi.org/10.1037/0033-295X.100.3.363">doi:10.1037/0033-295X.100.3.363</a></li>
+<li>Ewens, M. &amp; Giroud, X. (2025). Corporate hierarchy. NBER WP 34162 (WP). <a href="https://www.nber.org/papers/w34162">nber.org/papers/w34162</a></li>
+<li>Feldman, M. &amp; Pentland, B. (2003). Reconceptualizing organizational routines. <em>Administrative Science Quarterly</em> 48(1). <a href="https://doi.org/10.2307/3556620">doi:10.2307/3556620</a></li>
+<li>Felten, E., Raj, M. &amp; Seamans, R. (2021). Occupational, industry, and geographic exposure to AI. <em>Strategic Management Journal</em> 42(12). <a href="https://doi.org/10.1002/smj.3286">doi:10.1002/smj.3286</a></li>
+<li>Forsgren, N., Humble, J. &amp; Kim, G. (2018). <em>Accelerate</em>. IT Revolution Press.</li>
+<li>Forsgren, N. et al. (2021). The SPACE of developer productivity. <em>ACM Queue</em> 19(1). <a href="https://doi.org/10.1145/3454122.3454124">doi:10.1145/3454122.3454124</a></li>
+<li>Fügener, A., Grahl, J., Gupta, A. &amp; Ketter, W. (2022). Cognitive challenges in human–AI collaboration. <em>Information Systems Research</em> 33(2). <a href="https://doi.org/10.1287/isre.2021.1079">doi:10.1287/isre.2021.1079</a></li>
+<li>Garicano, L. (2000). Hierarchies and the organization of knowledge in production. <em>Journal of Political Economy</em> 108(5). <a href="https://doi.org/10.1086/317671">doi:10.1086/317671</a></li>
+<li>Goddard, K., Roudsari, A. &amp; Wyatt, J. (2012). Automation bias: a systematic review. <em>JAMIA</em> 19(1). <a href="https://doi.org/10.1136/amiajnl-2011-000089">doi:10.1136/amiajnl-2011-000089</a></li>
+<li>Goh, E. et al. (2024). Large language model influence on diagnostic reasoning. <em>JAMA Network Open</em> 7(10).</li>
+<li>Green, B. (2022). The flaws of policies requiring human oversight of government algorithms. <em>Computer Law &amp; Security Review</em> 45. <a href="https://doi.org/10.1016/j.clsr.2022.105681">doi:10.1016/j.clsr.2022.105681</a></li>
+<li>Hoffman, M. &amp; Tadelis, S. (2021). People management skills, employee attrition, and manager rewards. <em>Journal of Political Economy</em> 129(1). <a href="https://doi.org/10.1086/711409">doi:10.1086/711409</a></li>
+<li>Hoffmann, M., Boysel, S., Nagle, F., Peng, S. &amp; Xu, K. (2024). Generative AI and the nature of work (WP). <a href="https://www.ifo.de/DocDL/cesifo1_wp11479.pdf">CESifo WP 11479</a></li>
+<li>Humlum, A. &amp; Vestergaard, E. (2025). Large language models, small labor market effects. NBER WP 33777 (WP). <a href="https://www.nber.org/papers/w33777">nber.org/papers/w33777</a></li>
+<li>Kahneman, D. &amp; Klein, G. (2009). Conditions for intuitive expertise. <em>American Psychologist</em> 64(6). <a href="https://doi.org/10.1037/a0016755">doi:10.1037/a0016755</a></li>
+<li>Lave, J. &amp; Wenger, E. (1991). <em>Situated Learning</em>. Cambridge University Press.</li>
+<li>Lazear, E., Shaw, K. &amp; Stanton, C. (2015). The value of bosses. <em>Journal of Labor Economics</em> 33(4). <a href="https://doi.org/10.1086/681097">doi:10.1086/681097</a></li>
+<li>Lee, H.-P. et al. (2025). The impact of generative AI on critical thinking. <em>CHI '25</em>. <a href="https://doi.org/10.1145/3706598.3713778">doi:10.1145/3706598.3713778</a></li>
+<li>Lee, J. &amp; See, K. (2004). Trust in automation. <em>Human Factors</em> 46(1). <a href="https://doi.org/10.1518/hfes.46.1.50.30392">doi:10.1518/hfes.46.1.50.30392</a></li>
+<li>Malone, T. &amp; Crowston, K. (1994). The interdisciplinary study of coordination. <em>ACM Computing Surveys</em> 26(1). <a href="https://doi.org/10.1145/174666.174668">doi:10.1145/174666.174668</a></li>
+<li>Noer, D. (1993). <em>Healing the Wounds</em>. Jossey-Bass.</li>
+<li>Noy, S. &amp; Zhang, W. (2023). Experimental evidence on the productivity effects of generative AI. <em>Science</em> 381(6654). <a href="https://doi.org/10.1126/science.adh2586">doi:10.1126/science.adh2586</a></li>
+<li>Parker, S. (2014). Beyond motivation. <em>Annual Review of Psychology</em> 65. <a href="https://doi.org/10.1146/annurev-psych-010213-115208">doi:10.1146/annurev-psych-010213-115208</a></li>
+<li>Peng, S., Kalliamvakou, E., Cihon, P. &amp; Demirer, M. (2023). The impact of AI on developer productivity (WP). <a href="https://arxiv.org/abs/2302.06590">arXiv:2302.06590</a></li>
+<li>Perry, N., Srivastava, M., Kumar, D. &amp; Boneh, D. (2023). Do users write more insecure code with AI assistants? <em>ACM CCS '23</em>. <a href="https://doi.org/10.1145/3576915.3623157">doi:10.1145/3576915.3623157</a></li>
+<li>Repenning, N. &amp; Sterman, J. (2002). Capability traps. <em>Administrative Science Quarterly</em> 47(2). <a href="https://doi.org/10.2307/3094806">doi:10.2307/3094806</a></li>
+<li>Skitka, L., Mosier, K. &amp; Burdick, M. (1999). Does automation bias decision-making? <em>International Journal of Human-Computer Studies</em> 51(5). <a href="https://doi.org/10.1006/ijhc.1999.0252">doi:10.1006/ijhc.1999.0252</a></li>
+<li>Strathern, M. (1997). Improving ratings: audit in the British university system. <em>European Review</em> 5(3).</li>
+<li>Tarafdar, M., Tu, Q., Ragu-Nathan, B. &amp; Ragu-Nathan, T. S. (2007). The impact of technostress on role stress and productivity. <em>Journal of Management Information Systems</em> 24(1). <a href="https://doi.org/10.2753/MIS0742-1222240109">doi:10.2753/MIS0742-1222240109</a></li>
+<li>Vaccaro, M., Almaatouq, A. &amp; Malone, T. (2024). When combinations of humans and AI are useful. <em>Nature Human Behaviour</em> 8. <a href="https://doi.org/10.1038/s41562-024-02024-1">doi:10.1038/s41562-024-02024-1</a></li>
+<li>Venkatesh, V., Morris, M., Davis, G. &amp; Davis, F. (2003). User acceptance of information technology. <em>MIS Quarterly</em> 27(3). <a href="https://doi.org/10.2307/30036540">doi:10.2307/30036540</a></li>
+<li>Wrzesniewski, A. &amp; Dutton, J. (2001). Crafting a job. <em>Academy of Management Review</em> 26(2). <a href="https://doi.org/10.5465/amr.2001.4378011">doi:10.5465/amr.2001.4378011</a></li>
+<li>Wulf, J. (2012). The flattened firm: Not as advertised. <em>California Management Review</em> 55(1).</li>
+</ul>
+<hr />
+<h2 id="how-to-cite">How to cite</h2>
+<p>Krishnan, S. (2026). <em>The Task Is the Unit: What the Science Says About Redesigning Work for AI.</em> Evidence companion to "AI Didn't Create a Productivity Problem. It Exposed a Redesign Problem." GitHub. Source and citation file: <a href="https://github.com/sanoojcools/the-task-is-the-unit">https://github.com/sanoojcools/the-task-is-the-unit</a>.</p>
+<h2 id="licence">Licence</h2>
+<p>Text and figures: <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. You may share and adapt with attribution.</p>
+<h2 id="also-by-the-author">Also by the author</h2>
+<p>Architecture studies of AI-native companies, written from an organisation-design lens: <a href="https://github.com/sanoojcools">github.com/sanoojcools</a></p></article>
+<footer>© 2026 Sanuj Krishnan · Text and figures licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></footer>
+</div></body></html>
