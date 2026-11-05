@@ -1,0 +1,29 @@
+# Sanuj Krishnan
+
+> People and organization-design leader turned builder. 14+ years across Amazon/AWS, Swvl, Carrefour (Majid Al Futtaim) and Trianz. Co-founder of Work Engineering, a specification layer that makes work machine-readable so humans and AI agents can share it. Ships in code, not just slides.
+
+Bengaluru, India. Contact: DM on LinkedIn (https://www.linkedin.com/in/sanuj-krishnan/).
+
+## Now
+- Co-Founder, Work Engineering (stealth, Bengaluru): specifying AI-native orgs so work is machine-readable, verifiable and allocatable. Hiring a Founding AI Engineer.
+- Writing on AI and work redesign: 'AI didn't create a productivity problem. It exposed a redesign problem.' and 'The task is the unit' (60+ source evidence review).
+
+## Experience
+- 2024-2026: Head HRBP, Trianz. Services-as-Software transformation; redeployed talent into AI platform roles (Concierto, Avrio, Agentic AI); Role Maturity Framework: 16 families, 80+ jobs, benchmarked vs Amazon/Microsoft; Co-drove AI-Native SDLC with the CTO: 8 parallel PODs using Cursor, Claude Code and Codex
+- 2021-2022: Sr Manager, Human Capital, E-commerce & Technology, Carrefour MENA, Majid Al Futtaim (Dubai). Designed the org for a $1.5B e-commerce business; Built the D&I Council from zero
+- 2020-2021: Director HR, Swvl. Built People from scratch across 6 countries; Restructured geography to customer-segment, pulling 3 country launches forward by 6 months
+- 2012-2020: HR Business Partner (Seller Support, AWS India), Amazon / AWS. Amazon Bar Raiser; AWS Certified; People programs scaling to 4000+ hires; Drove attrition from 56% to 26%; Built Sr Leader Assimilation for 200+ L6+ leaders
+- 2010-2012: MBA (HR), XLRI Jamshedpur
+
+## Builds
+- [Work Engineering](https://work-engineering.onrender.com): Spec API (FastAPI, Postgres, React). Work Units are independently accountable contracts; execution systems consume the spec.
+- [Workforce Scenario Engine](https://sanoojcools-workforce-scenario-engine-app-2lrssf.streamlit.app): Monte Carlo (10k+ runs) for hiring, attrition, AI absorption and revenue per employee. Built for CHROs who think in product.
+- [People Ledger](https://sanoojcools.github.io/people-ledger/app.html): Decentralized professional identity: employer-signed credentials, ZK proofs, AI job matching.
+- [Architecture studies](https://github.com/sanoojcools/atlan-architecture-study): Public-signal reconstructions of Atlan and Ontora.
+
+## Writing
+- [AI didn't create a productivity problem. It exposed a redesign problem.](https://sanoojcools.github.io/writing/ai-redesign-problem/)
+- [The task is the unit: what the science says about redesigning work for AI](https://sanoojcools.github.io/writing/the-task-is-the-unit/)
+
+## Optional
+- [Machine-readable profile](https://sanoojcools.github.io/me.json)
