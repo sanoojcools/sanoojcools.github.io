@@ -1,0 +1,103 @@
+{
+  "name": "Sanuj Krishnan",
+  "handle": "sanoojcools",
+  "location": "Bengaluru, India",
+  "headline": "I design AI-native organizations. Work Engineering is the spec layer.",
+  "summary": "People and organization-design leader turned builder. 14+ years across Amazon/AWS, Swvl, Carrefour (Majid Al Futtaim) and Trianz. Co-founder of Work Engineering, a specification layer that makes work machine-readable so humans and AI agents can share it. Ships in code, not just slides.",
+  "now": [
+    "Co-Founder, Work Engineering (stealth, Bengaluru): specifying AI-native orgs so work is machine-readable, verifiable and allocatable. Hiring a Founding AI Engineer.",
+    "Writing on AI and work redesign: 'AI didn't create a productivity problem. It exposed a redesign problem.' and 'The task is the unit' (60+ source evidence review)."
+  ],
+  "experience": [
+    {
+      "years": "2024-2026",
+      "org": "Trianz",
+      "role": "Head HRBP",
+      "highlights": [
+        "Services-as-Software transformation; redeployed talent into AI platform roles (Concierto, Avrio, Agentic AI)",
+        "Role Maturity Framework: 16 families, 80+ jobs, benchmarked vs Amazon/Microsoft",
+        "Co-drove AI-Native SDLC with the CTO: 8 parallel PODs using Cursor, Claude Code and Codex"
+      ]
+    },
+    {
+      "years": "2021-2022",
+      "org": "Carrefour MENA, Majid Al Futtaim (Dubai)",
+      "role": "Sr Manager, Human Capital, E-commerce & Technology",
+      "highlights": [
+        "Designed the org for a $1.5B e-commerce business",
+        "Built the D&I Council from zero"
+      ]
+    },
+    {
+      "years": "2020-2021",
+      "org": "Swvl",
+      "role": "Director HR",
+      "highlights": [
+        "Built People from scratch across 6 countries",
+        "Restructured geography to customer-segment, pulling 3 country launches forward by 6 months"
+      ]
+    },
+    {
+      "years": "2012-2020",
+      "org": "Amazon / AWS",
+      "role": "HR Business Partner (Seller Support, AWS India)",
+      "highlights": [
+        "Amazon Bar Raiser; AWS Certified",
+        "People programs scaling to 4000+ hires",
+        "Drove attrition from 56% to 26%",
+        "Built Sr Leader Assimilation for 200+ L6+ leaders"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "years": "2010-2012",
+      "school": "XLRI Jamshedpur",
+      "degree": "MBA, Human Resources"
+    }
+  ],
+  "builds": [
+    {
+      "name": "Work Engineering",
+      "what": "Spec API (FastAPI, Postgres, React). Work Units are independently accountable contracts; execution systems consume the spec.",
+      "url": "https://work-engineering.onrender.com",
+      "code": "https://github.com/sanoojcools/work-engineering"
+    },
+    {
+      "name": "Workforce Scenario Engine",
+      "what": "Monte Carlo (10k+ runs) for hiring, attrition, AI absorption and revenue per employee. Built for CHROs who think in product.",
+      "url": "https://sanoojcools-workforce-scenario-engine-app-2lrssf.streamlit.app",
+      "code": "https://github.com/sanoojcools/workforce-scenario-engine"
+    },
+    {
+      "name": "People Ledger",
+      "what": "Decentralized professional identity: employer-signed credentials, ZK proofs, AI job matching.",
+      "url": "https://sanoojcools.github.io/people-ledger/app.html",
+      "code": "https://github.com/sanoojcools/people-ledger"
+    },
+    {
+      "name": "Architecture studies",
+      "what": "Public-signal reconstructions of Atlan and Ontora.",
+      "code": "https://github.com/sanoojcools/atlan-architecture-study"
+    }
+  ],
+  "expertise": [
+    "AI-native organization design",
+    "Work redesign for AI",
+    "People analytics",
+    "Workforce planning",
+    "Org design at scale",
+    "HR business partnering",
+    "Bar Raiser hiring"
+  ],
+  "links": {
+    "site": "https://sanoojcools.github.io",
+    "linkedin": "https://www.linkedin.com/in/sanuj-krishnan/",
+    "github": "https://github.com/sanoojcools"
+  },
+  "contact": "DM on LinkedIn",
+  "sameAs": [
+    "https://www.linkedin.com/in/sanuj-krishnan/",
+    "https://github.com/sanoojcools"
+  ]
+}
